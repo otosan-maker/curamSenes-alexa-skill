@@ -1,0 +1,101 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "new medicine",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "NewMedicine",
+          "slots": [
+            {
+              "name": "NewMed",
+              "type": "medicinePills"
+            },
+            {
+              "name": "NewTime",
+              "type": "AMAZON.TIME"
+            }
+          ],
+          "samples": [
+            "add new medication {NewMed} to {NewTime}",
+            "write {NewMed} on {NewTime}",
+            "write down {NewMed} to take at {NewTime}",
+            "add new medicine {NewMed} to take at {NewTime}",
+            "add medicine {NewMed} to take at {NewTime}",
+            "remember John to take  {NewMed} at {NewTime}",
+            "Add {NewMed} at {NewTime}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "greenpill"
+              }
+            },
+            {
+              "name": {
+                "value": "yellowpill"
+              }
+            },
+            {
+              "name": {
+                "value": "redpill"
+              }
+            },
+            {
+              "name": {
+                "value": "blackpill"
+              }
+            },
+            {
+              "name": {
+                "value": "bluepill",
+                "synonyms": [
+                  "blue pills",
+                  "blue pill"
+                ]
+              }
+            }
+          ],
+          "name": "medicinePills"
+        }
+      ]
+    }
+  },
+  "version": "10"
+}
